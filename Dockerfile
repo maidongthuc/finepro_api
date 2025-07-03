@@ -23,5 +23,7 @@ COPY src/ ./src/
 COPY README.md .
 COPY .env .
 
+EXPOSE 8000
+
 # Activate virtualenv and run app
 CMD ["/bin/bash", "-c", ". venv/bin/activate && python main.py"]
